@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+
+        /* box-sizing to remove the default margin */
+        * {
+            box-sizing: border-box;
+        }
+
+        
+        /* navbar */
+        .nav{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(64, 79, 107);
+            overflow: auto;
+            margin-top: 10px;
+            
+            
+        }
+        
+        .nav li{
+            float: left;
+           
+        }
+
+        .nav li a{
+            text-decoration: none;
+            color: whitesmoke;
+            display: block;
+            padding: 15px 20px;
+            
+
+        }
+
+        .nav li a:hover{
+            color: rosybrown;
+        }
+
+        .nav li a:active{
+            color: rgb(170, 56, 56);
+        }
+
+
+        /* i used max-width instead of width to help to fit to the screen for responsiveness */
+        .container {
+            max-width: 960px;
+
+            /* when using margin-auto you need to first set you width and you need not set
+             the top and bottom margin to auto less it will not be centered */
+            margin: 10px auto;
+
+        }
+
+        .float {
+            background-color: cadetblue;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 3px solid rgb(53, 53, 54);
+        }
+
+        #box-2 {
+            float: left;
+            width: 65%;
+        }
+
+        #box-3 {
+            float: right;
+            width: 30%;
+        }
+
+        .clear-float {
+            clear: both;
+        }
+
+        #box-4 {
+            float: left;
+            width: 30%;
+        }
+
+        #box-5 {
+            float: right;
+            width: 65%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <Li><a href="#">Home</a></Li>
+        <Li><a href="#">About</a></Li>
+        <Li><a href="#">ContactUs</a></Li>
+        <Li><a href="#">News</a></Li>
+        
+    </ul>
+    <br><br>
+
+
+
+    <div class="container">
+        <div class="float" id="box-1">
+            <h2>Hello Dear</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Fuga provident quia molestiae ipsam.
+                Officiis deserunt beatae, fugiat maiores modi odio!</p>
+        </div>
+
+        <div class="float" id="box-2">
+            <h2>Hello Dear</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Fuga provident quia molestiae ipsam.
+                Officiis deserunt beatae, fugiat maiores modi odio!</p>
+        </div>
+
+        <div class="float" id="box-3">
+            <h2>Hello Dear</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Fuga provident quia molestiae ipsam.
+                Officiis deserunt beatae, fugiat maiores modi odio!</p>
+        </div>
+
+        <div class="clear-float"></div>
+
+        <div class="float" id="box-4">
+            <h2>Hello Dear</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Fuga provident quia molestiae ipsam.
+                Officiis deserunt beatae, fugiat maiores modi odio!</p>
+        </div>
+
+        <div class="float" id="box-5">
+            <h2>Hello Dear</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Fuga provident quia molestiae ipsam.
+                Officiis deserunt beatae, fugiat maiores modi odio!</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
